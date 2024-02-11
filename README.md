@@ -6,5 +6,12 @@ This is an experiment on chatbots powered by LLM's flows.
 ## Stack
 - Nextjs
 - Tailwind
-- Shadcn
+- Radix UI
 - Langchain(node)
+
+## Resources
+- https://tailwindcss.com/
+- https://www.radix-ui.com/
+
+## References
+- https://blog.langchain.dev/opengpts/
