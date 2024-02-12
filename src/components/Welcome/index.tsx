@@ -1,5 +1,7 @@
-import { Heading, Select } from "@radix-ui/themes";
+import { Separator } from "@radix-ui/react-dropdown-menu";
+import { Button, Heading, Select } from "@radix-ui/themes";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Welcome() {
@@ -17,9 +19,9 @@ export default function Welcome() {
     <>
       <div className="w-full h-screen flex gap-4 flex-col justify-center items-center">
         <Heading as="h1" size="9" className="mb-8">
-          This is the template for Nextjs with Radix UI
+          AI Portal
         </Heading>
-        <Heading size="4">Set up with next-theme</Heading>
+        <Heading size="4">Next chatbot experience</Heading>
         <Select.Root value={theme} onValueChange={setTheme}>
           <Select.Trigger placeholder="Pick a Theme" />
           <Select.Content>
@@ -30,6 +32,10 @@ export default function Welcome() {
             </Select.Group>
           </Select.Content>
         </Select.Root>
+
+        <Button variant="ghost">
+          <Link href="/chat">{"Let's Go!"}</Link>
+        </Button>
       </div>
     </>
   );
